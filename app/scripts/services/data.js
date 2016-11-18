@@ -3,7 +3,7 @@
 angular.module('todoListApp')
   .service('dataService', function($http) {
     this.getTodos = function(callback) {
-      $http.get('mock/todos.json')
+      $http.get('/api/todos')
       .then(callback)
     };
 
